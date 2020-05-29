@@ -17,12 +17,11 @@ services:
     arguments:
       - '@jms_serializer'
 
-  evrinoma.grid.menu:
-    class: Evrinoma\GridBundle\Menu\GridMenu
-    tags:
-      - { name: evrinoma.menu }
+#  evrinoma.grid.menu:
+#    class: Evrinoma\GridBundle\Menu\GridMenu
 
   Evrinoma\GridBundle\Menu\GridMenu:
-    alias: evrinoma.grid.menu
+#    alias: evrinoma.grid.menu
     public: true
-    deprecated:
+    tags:
+      - { name: evrinoma.menu }

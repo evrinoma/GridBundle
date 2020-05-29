@@ -22,7 +22,7 @@ final class GridController extends AbstractController
     {
         $event = ['titleHeader' => 'Grid', 'pageName' => 'Ag Simple Delta8'];
 
-        return $this->render('@EvrinomaDelta8/ag_simple.html.twig', $event);
+        return $this->render('@EvrinomaGrid/ag_simple.html.twig', $event);
     }
 
     /**
@@ -32,7 +32,7 @@ final class GridController extends AbstractController
     {
         $event = ['titleHeader' => 'Grid', 'pageName' => 'AgTree Delta8'];
 
-        return $this->render('@EvrinomaDelta8/ag_tree.html.twig', $event);
+        return $this->render('@EvrinomaGrid/ag_tree.html.twig', $event);
     }
 
     /**
@@ -42,7 +42,7 @@ final class GridController extends AbstractController
     {
         $event = ['titleHeader' => 'Grid', 'pageName' => 'Handson Delta8'];
 
-        return $this->render('@EvrinomaDelta8/handson_tree.html.twig', $event);
+        return $this->render('@EvrinomaGrid/handson_tree.html.twig', $event);
     }
 //endregion Public
 }

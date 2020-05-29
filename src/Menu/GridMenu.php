@@ -23,7 +23,7 @@ final class GridMenu implements MenuInterface
         $gridAgSimple
             ->setRole([RoleInterface::ROLE_SUPER_ADMIN])
             ->setName('Ag Simple')
-            ->setRoute('delta_ag_simple');
+            ->setRoute('grid_ag_simple');
 
         $em->persist($gridAgSimple);
 
@@ -31,7 +31,7 @@ final class GridMenu implements MenuInterface
         $gridAgTree
             ->setRole([RoleInterface::ROLE_SUPER_ADMIN])
             ->setName('Ag Tree')
-            ->setRoute('delta_ag_tree');
+            ->setRoute('grid_ag_tree');
 
         $em->persist($gridAgTree);
 
@@ -39,7 +39,7 @@ final class GridMenu implements MenuInterface
         $gridHandsonTree
             ->setRole([RoleInterface::ROLE_SUPER_ADMIN])
             ->setName('Handson Tree')
-            ->setRoute('delta_handson_tree');
+            ->setRoute('grid_handson_tree');
 
         $em->persist($gridHandsonTree);
 
