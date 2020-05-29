@@ -5,6 +5,7 @@ namespace Evrinoma\GridBundle\Menu;
 
 
 use Doctrine\ORM\EntityManagerInterface;
+use Evrinoma\Delta8Bundle\Voiter\GridRoleInterface;
 use Evrinoma\MenuBundle\Entity\MenuItem;
 use Evrinoma\MenuBundle\Manager\MenuInterface;
 use Evrinoma\UtilsBundle\Voiter\RoleInterface;
@@ -21,7 +22,7 @@ final class GridMenu implements MenuInterface
     {
         $gridAgSimple = new MenuItem();
         $gridAgSimple
-            ->setRole([RoleInterface::ROLE_SUPER_ADMIN])
+            ->setRole([GridRoleInterface::ROLE_USER_GRID])
             ->setName('Ag Simple')
             ->setRoute('grid_ag_simple');
 
@@ -29,7 +30,7 @@ final class GridMenu implements MenuInterface
 
         $gridAgTree = new MenuItem();
         $gridAgTree
-            ->setRole([RoleInterface::ROLE_SUPER_ADMIN])
+            ->setRole([GridRoleInterface::ROLE_USER_GRID])
             ->setName('Ag Tree')
             ->setRoute('grid_ag_tree');
 
@@ -37,7 +38,7 @@ final class GridMenu implements MenuInterface
 
         $gridHandsonTree = new MenuItem();
         $gridHandsonTree
-            ->setRole([RoleInterface::ROLE_SUPER_ADMIN])
+            ->setRole([GridRoleInterface::ROLE_USER_GRID])
             ->setName('Handson Tree')
             ->setRoute('grid_handson_tree');
 
@@ -45,7 +46,7 @@ final class GridMenu implements MenuInterface
 
         $menuDelta = new MenuItem();
         $menuDelta
-            ->setRole([RoleInterface::ROLE_SUPER_ADMIN])
+            ->setRole([GridRoleInterface::ROLE_USER_GRID])
             ->setName('Grid')
             ->setUri('#')
             ->addChild($gridAgSimple)
