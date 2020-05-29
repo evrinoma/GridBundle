@@ -1,6 +1,6 @@
 <?php
 
-namespace Evrinoma\Delta8Bundle\Voiter;
+namespace Evrinoma\GridBundle\Voiter;
 
 /**
  * Interface Delta8RoleInterface
