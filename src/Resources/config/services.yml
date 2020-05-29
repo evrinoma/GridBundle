@@ -1,0 +1,28 @@
+services:
+  Evrinoma\GridBundle\Controller\GridController:
+    alias:  evrinoma.grid.controller
+    public: true
+    deprecated:
+
+  evrinoma.grid.controller:
+    class: Evrinoma\GridBundle\Controller\GridController
+
+    Evrinoma\GridBundle\Controller\GridApiController:
+    alias: evrinoma.grid.api.controller
+    public: true
+    deprecated:
+
+  evrinoma.grid.api.controller:
+    class: Evrinoma\GridBundle\Controller\GridApiController
+    arguments:
+      - '@jms_serializer'
+
+  evrinoma.grid.menu:
+    class: Evrinoma\GridBundle\Menu\GridMenu
+
+  Evrinoma\GridBundle\Menu\GridMenu:
+    alias: evrinoma.grid.menu
+    public: true
+    deprecated:
+    tags:
+      - { name: evrinoma.menu }

@@ -1,0 +1,7 @@
+grid:
+  resource: "@EvrinomaGridBundle/Resources/config/routing/default.yml"
+  prefix: evrinoma
+
+gridapi:
+  resource: "@EvrinomaGridBundle/Resources/config/routing/api.yml"
+  prefix: evrinoma

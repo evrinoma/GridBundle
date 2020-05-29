@@ -1,0 +1,20 @@
+grid_ag_simple:
+  path: /grid/ag_simple
+  methods: GET
+  defaults: { _controller: Evrinoma\GridBundle\Controller\GridController::gridAgSimple}
+  options:
+    expose: true
+
+grid_ag_tree:
+  path: /grid/ag_tree
+  methods: GET
+  defaults: { _controller: Evrinoma\GridBundle\Controller\GridController::gridAgTree}
+  options:
+    expose: true
+
+grid_handson_tree:
+  path: /grid/handson_tree
+  methods: GET
+  defaults: { _controller: Evrinoma\GridBundle\Controller\GridController::gridHandsonTree}
+  options:
+    expose: true

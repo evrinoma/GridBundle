@@ -1,0 +1,3 @@
+grid_api:
+  resource: "@EvrinomaGridBoardBundle/Controller/GridApiController.php"
+  type: annotation

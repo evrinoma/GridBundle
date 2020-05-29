@@ -8,7 +8,7 @@ namespace Evrinoma\GridBundle;
 use Evrinoma\GridBundle\DependencyInjection\EvrinomaGridExtension;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class EvrinomaGridBundle extends Bundle
+class EvrinomaGridBoardBundle extends Bundle
 {
     public function getContainerExtension()
     {

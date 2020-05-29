@@ -10,11 +10,11 @@ use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 use Symfony\Component\DependencyInjection\Reference;
 
 /**
- * Class EvrinomaGridExtension
+ * Class EvrinomaGridBoardExtension
  *
  * @package Evrinoma\GridBundle\DependencyInjection
  */
-class EvrinomaGridExtension extends Extension
+class EvrinomaGridBoardExtension extends Extension
 {
 //region SECTION: Public
     public function load(array $configs, ContainerBuilder $container)
