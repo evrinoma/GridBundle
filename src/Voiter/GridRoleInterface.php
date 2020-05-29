@@ -3,9 +3,9 @@
 namespace Evrinoma\GridBundle\Voiter;
 
 /**
- * Interface Delta8RoleInterface
+ * Interface GridRoleInterface
  *
- * @package Evrinoma\Delta8Bundle\Voiter
+ * @package Evrinoma\GridBundle\Voiter
  */
 interface GridRoleInterface
 {
