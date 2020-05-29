@@ -19,10 +19,10 @@ services:
 
   evrinoma.grid.menu:
     class: Evrinoma\GridBundle\Menu\GridMenu
+    tags:
+      - { name: evrinoma.menu }
 
   Evrinoma\GridBundle\Menu\GridMenu:
     alias: evrinoma.grid.menu
     public: true
     deprecated:
-    tags:
-      - { name: evrinoma.menu }

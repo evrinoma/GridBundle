@@ -7,14 +7,13 @@ use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
-use Symfony\Component\DependencyInjection\Reference;
 
 /**
- * Class EvrinomaGridBoardExtension
+ * Class EvrinomaGridExtension
  *
  * @package Evrinoma\GridBundle\DependencyInjection
  */
-class EvrinomaGridBoardExtension extends Extension
+class EvrinomaGridExtension extends Extension
 {
 //region SECTION: Public
     public function load(array $configs, ContainerBuilder $container)
