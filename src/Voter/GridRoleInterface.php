@@ -1,11 +1,11 @@
 <?php
 
-namespace Evrinoma\GridBundle\Voiter;
+namespace Evrinoma\GridBundle\Voter;
 
 /**
  * Interface GridRoleInterface
  *
- * @package Evrinoma\GridBundle\Voiter
+ * @package Evrinoma\GridBundle\Voter
  */
 interface GridRoleInterface
 {
