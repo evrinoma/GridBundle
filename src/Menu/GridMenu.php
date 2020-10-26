@@ -6,7 +6,7 @@ namespace Evrinoma\GridBundle\Menu;
 
 use Doctrine\ORM\EntityManagerInterface;
 use Evrinoma\MenuBundle\Entity\MenuItem;
-use Evrinoma\MenuBundle\Manager\MenuInterface;
+use Evrinoma\MenuBundle\Menu\MenuInterface;
 use Evrinoma\UtilsBundle\Voter\RoleInterface;
 
 /**
@@ -17,13 +17,14 @@ use Evrinoma\UtilsBundle\Voter\RoleInterface;
 final class GridMenu implements MenuInterface
 {
 
-    public function createMenu(EntityManagerInterface $em): void
+    public function create(EntityManagerInterface $em): void
     {
         $gridAgSimple = new MenuItem();
         $gridAgSimple
             ->setRole([RoleInterface::ROLE_DEV_USER])
             ->setName('Ag Simple')
-            ->setRoute('grid_ag_simple');
+            ->setRoute('grid_ag_simple')
+            ->setTag($this->tag());
 
         $em->persist($gridAgSimple);
 
@@ -31,7 +32,8 @@ final class GridMenu implements MenuInterface
         $gridAgTree
             ->setRole([RoleInterface::ROLE_DEV_USER])
             ->setName('Ag Tree')
-            ->setRoute('grid_ag_tree');
+            ->setRoute('grid_ag_tree')
+            ->setTag($this->tag());
 
         $em->persist($gridAgTree);
 
@@ -39,7 +41,8 @@ final class GridMenu implements MenuInterface
         $gridHandsonTree
             ->setRole([RoleInterface::ROLE_DEV_USER])
             ->setName('Handson Tree')
-            ->setRoute('grid_handson_tree');
+            ->setRoute('grid_handson_tree')
+            ->setTag($this->tag());
 
         $em->persist($gridHandsonTree);
 
@@ -51,7 +54,7 @@ final class GridMenu implements MenuInterface
             ->addChild($gridAgSimple)
             ->addChild($gridAgTree)
             ->addChild($gridHandsonTree)
-        ;
+            ->setTag($this->tag());
 
         $em->persist($menuDelta);
     }
@@ -59,5 +62,10 @@ final class GridMenu implements MenuInterface
     public function order(): int
     {
         return 6;
+    }
+
+    public function tag(): string
+    {
+        return MenuInterface::DEFAULT_TAG;
     }
 }
