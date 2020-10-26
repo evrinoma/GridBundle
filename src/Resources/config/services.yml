@@ -6,6 +6,7 @@ services:
 
   evrinoma.grid.controller:
     class: Evrinoma\GridBundle\Controller\GridController
+    autowire: true
 
   Evrinoma\GridBundle\Controller\GridApiController:
     alias: evrinoma.grid.api.controller
@@ -16,6 +17,7 @@ services:
     class: Evrinoma\GridBundle\Controller\GridApiController
     arguments:
       - '@jms_serializer'
+    autowire: true
 
 #  evrinoma.grid.menu:
 #    class: Evrinoma\GridBundle\Menu\GridMenu
