@@ -2,7 +2,6 @@ services:
   Evrinoma\GridBundle\Controller\GridController:
     alias:  evrinoma.grid.controller
     public: true
-    deprecated:
 
   evrinoma.grid.controller:
     class: Evrinoma\GridBundle\Controller\GridController
@@ -11,7 +10,6 @@ services:
   Evrinoma\GridBundle\Controller\GridApiController:
     alias: evrinoma.grid.api.controller
     public: true
-    deprecated:
 
   evrinoma.grid.api.controller:
     class: Evrinoma\GridBundle\Controller\GridApiController
