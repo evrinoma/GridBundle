@@ -4,7 +4,7 @@ namespace Evrinoma\GridBundle\Controller;
 
 use Evrinoma\UtilsBundle\Controller\AbstractApiController;
 use FOS\RestBundle\Controller\Annotations as Rest;
-use Swagger\Annotations as SWG;
+use OpenApi\Annotations as OA;
 
 /**
  * Class GridApiController
@@ -17,8 +17,8 @@ final class GridApiController extends AbstractApiController
 
     /**
      * @Rest\Get("/api/grid/ag_data_simple", options={"expose"=true}, name="api_grid_ag_data_simple")
-     * @SWG\Get(tags={"delta"})
-     * @SWG\Response(response=200,description="Returns ag_data_tree objects")
+     * @OA\Get(tags={"delta"})
+     * @OA\Response(response=200,description="Returns ag_data_tree objects")
      */
     public function journalDelptaAgDataSimpleAction()
     {
@@ -36,8 +36,8 @@ final class GridApiController extends AbstractApiController
 
     /**
      * @Rest\Get("/api/grid/ag_data_tree", options={"expose"=true}, name="api_grid_ag_data_tree")
-     * @SWG\Get(tags={"delta"})
-     * @SWG\Response(response=200,description="Returns handson_data_tree objects")
+     * @OA\Get(tags={"delta"})
+     * @OA\Response(response=200,description="Returns handson_data_tree objects")
      */
     public function journalDelptaAgDataTreeAction()
     {
@@ -73,8 +73,8 @@ final class GridApiController extends AbstractApiController
 
     /**
      * @Rest\Get("/api/grid/handson_data_tree", options={"expose"=true}, name="api_grid_handson_data_tree")
-     * @SWG\Get(tags={"delta"})
-     * @SWG\Response(response=200,description="Returns handson_data_tree objects")
+     * @OA\Get(tags={"delta"})
+     * @OA\Response(response=200,description="Returns handson_data_tree objects")
      */
     public function journalDelptaHandsonDataTreeAction()
     {
