@@ -9,6 +9,8 @@ use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 class EvrinomaGridBundle extends Bundle
 {
+    public const GRID_BUNDLE = 'grid';
+
 //region SECTION: Getters/Setters
     public function getContainerExtension()
     {

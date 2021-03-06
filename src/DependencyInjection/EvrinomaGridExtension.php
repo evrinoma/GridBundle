@@ -3,6 +3,7 @@
 
 namespace Evrinoma\GridBundle\DependencyInjection;
 
+use Evrinoma\GridBundle\EvrinomaGridBundle;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;
@@ -26,7 +27,7 @@ class EvrinomaGridExtension extends Extension
 //region SECTION: Getters/Setters
     public function getAlias()
     {
-        return 'grid';
+        return EvrinomaGridBundle::GRID_BUNDLE;
     }
 //endregion Getters/Setters
 }
