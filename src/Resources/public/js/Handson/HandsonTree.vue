@@ -26,6 +26,6 @@
 </script>
 
 <style lang="scss">
-    @import "../../../../../../node_modules/handsontable/dist/handsontable.full.css";
+    @import "~handsontable/dist/handsontable.full.css";
 </style>
 
